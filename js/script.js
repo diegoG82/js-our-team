@@ -7,9 +7,6 @@
 // Scott Estrada	Developer	            scott-estrada-developer.jpg
 // Barbara Ramos	Graphic Designer	    barbara-ramos-graphic-designer.jpg
 
-
-// MILESTONE 1:
-// Stampare su console le informazioni di nome, ruolo e la stringa della foto
 // MILESTONE 2:
 // Stampare le stesse informazioni su DOM sottoforma di stringhe
 // BONUS 1:
@@ -17,67 +14,63 @@
 // BONUS 2:
 // Organizzare i singoli membri in card/schede. Se non vi sentite particolarmente creativi, potete prendere uno spunto dallo screenshot allegato.
 
-
-
 // MILESTONE 0:
 // Creare l’array di oggetti con le informazioni fornite.
 
-
-
-const ourTeam = [{
-
-    name : "Wayne",
+const ourTeam = [
+  {
+    name: "Wayne",
     surname: "Barnett",
     role: "Founder & CEO",
-    imagePersonal : "wayne-barnett-founder-ceo.jpg",
+    imagePersonal: "wayne-barnett-founder-ceo.jpg",
+  },
 
-},
-
-{
-
-    name : "Angela",
+  {
+    name: "Angela",
     surname: "Caroll",
     role: "Chief Editor",
-    imagePersonal : "angela-caroll-chief-editor.jpg",
+    imagePersonal: "angela-caroll-chief-editor.jpg",
+  },
 
-},
-
-{
-
-    name : "Walter",
+  {
+    name: "Walter",
     surname: "Gordon",
     role: "Office Manager",
-    imagePersonal : "walter-gordon-office-manager.jpg"
+    imagePersonal: "walter-gordon-office-manager.jpg",
+  },
 
-},
-
-{
-
-    name : "Angela ",
+  {
+    name: "Angela ",
     surname: "Lopez",
     role: "Social Media manager",
-    imagePersonal : "angela-lopez-social-media-manager.jpg",
+    imagePersonal: "angela-lopez-social-media-manager.jpg",
+  },
 
-},
-
-{
-
-    name : "Scott",
+  {
+    name: "Scott",
     surname: "Estrada",
     role: "Developer",
-    imagePersonal : "scott-estrada-developer.jpg",
+    imagePersonal: "scott-estrada-developer.jpg",
+  },
 
-},
-
-{
-
-    name : "Barbara ",
+  {
+    name: "Barbara ",
     surname: "Ramos",
     role: "Graphic Designer	",
-    imagePersonal : "barbara-ramos-graphic-designer.jpg",
-
-},
-
+    imagePersonal: "barbara-ramos-graphic-designer.jpg",
+  },
 ];
 
+// MILESTONE 1:
+// Stampare su console le informazioni di nome, ruolo e la stringa della foto
+
+for (let i = 0; i < ourTeam.length; i++) {
+  const teamList = ourTeam[i];
+  console.log(teamList);
+}
+
+
+
+// MILESTONE 2:
+// Stampare le stesse informazioni su DOM sottoforma di stringhe
 
