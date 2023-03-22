@@ -64,13 +64,35 @@ const ourTeam = [
 // MILESTONE 1:
 // Stampare su console le informazioni di nome, ruolo e la stringa della foto
 
-for (let i = 0; i < ourTeam.length; i++) {
-  const teamList = ourTeam[i];
-  console.log(teamList);
-}
-
-
+// RICHIAMO LA UL
+const teamUl = document.querySelector("ul");
+console.log(teamUl);
 
 // MILESTONE 2:
 // Stampare le stesse informazioni su DOM sottoforma di stringhe
 
+for (let i = 0; i < ourTeam.length; i++) {
+  const teamList = ourTeam[i];
+  console.log(teamList);
+
+  for (let key in teamList) {
+    teamUl.innerHTML += `<li>${key}: ${teamList[key]}</li>`;
+  }
+}
+
+// BONUS 1:
+// Trasformare la stringa foto in una immagine effettiva
+// BONUS 2:
+// Organizzare i singoli membri in card/schede. Se non vi sentite particolarmente creativi, potete prendere uno spunto dallo screenshot allegato.
+
+
+for (let i = 0; i < ourTeam.length; i++) {
+    const teamList = ourTeam[i];
+    console.log(teamList);
+  
+    for (let key in teamList) {
+      teamUl.innerHTML += `<li>${key}: ${teamList[key]}</li>`;
+    }
+  }
+
+  
