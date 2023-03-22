@@ -7,13 +7,6 @@
 // Scott Estrada	Developer	            scott-estrada-developer.jpg
 // Barbara Ramos	Graphic Designer	    barbara-ramos-graphic-designer.jpg
 
-// MILESTONE 2:
-// Stampare le stesse informazioni su DOM sottoforma di stringhe
-// BONUS 1:
-// Trasformare la stringa foto in una immagine effettiva
-// BONUS 2:
-// Organizzare i singoli membri in card/schede. Se non vi sentite particolarmente creativi, potete prendere uno spunto dallo screenshot allegato.
-
 // MILESTONE 0:
 // Creare l’array di oggetti con le informazioni fornite.
 
@@ -64,9 +57,9 @@ const ourTeam = [
 // MILESTONE 1:
 // Stampare su console le informazioni di nome, ruolo e la stringa della foto
 
-// RICHIAMO LA UL
 // const teamUl = document.querySelector("ul");
 // console.log(teamUl);
+
 
 // MILESTONE 2:
 // Stampare le stesse informazioni su DOM sottoforma di stringhe
@@ -80,18 +73,20 @@ const ourTeam = [
 //   }
 // }
 
+
 // BONUS 1:
 // Trasformare la stringa foto in una immagine effettiva
 // BONUS 2:
 // Organizzare i singoli membri in card/schede. Se non vi sentite particolarmente creativi, potete prendere uno spunto dallo screenshot allegato.
 
-// richiamo dal dom le row
+// Richiamo dal dom le row
 const createRow = document.querySelector(".row");
 console.log(createRow);
 
-// dichiaro una variabile card da usare nel ciclo
+// Dichiaro una variabile card da usare nel ciclo
 let cards = "";
 
+// Con il ciclo creo le card
 for (let i = 0; i < ourTeam.length; i++) {
   const teamMember = ourTeam[i];
   cards += ` <div class="col">
@@ -110,5 +105,5 @@ for (let i = 0; i < ourTeam.length; i++) {
 console.log(cards);
 
 
-// manipolo il DOM per inserire le cards
+// Manipolo il DOM per inserire le cards
 createRow.innerHTML = cards;
